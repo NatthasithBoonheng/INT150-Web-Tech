@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.7em;
+    width: 850px;
+    background-color: #421d42;
+    background-image: url(chatgpt.png);
+    background-repeat: no-repeat;
+    background-position: 265px 311px;
+    display: grid;
+    grid-template-rows: 311px 617px 271px;
+    grid-template-columns: 265px auto 345px;
+    grid-template-areas: "intro intro key"
+                         "gensis image comprehend"
+                         "application summary summary";
+}
+
+#introduction{
+    color: white;
+    padding: 20px;
+    grid-area: intro;
+}
+
+#introduction h1{
+    font-variant: small-caps;
+    font-size: 4em;
+    position: absolute;
+    left: 1.7%;
+    top: 28%;
+}
+
+#introduction p{
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+#key-insights{
+    background-color: #a690af;
+    padding: 20px;
+    padding-top: unset;
+    grid-area: key;
+}
+
+#key-insights ul li{
+    padding-bottom: 5px;
+}
+
+#genesis{
+    background-color: #85a3c2;
+    padding: 20px;
+    padding-top: unset;
+    grid-area: gensis;
+}
+
+#comprehending{
+    background-color: #a690af;
+    padding: 20px;
+    grid-area: comprehend;
+}
+
+#applications{
+    background-color: #85a3c2;
+    padding: 20px;
+    grid-area: application;
+}
+
+#summary{
+    background-color: #336699;
+    color: white;
+    padding: 20px;
+    padding-top: 64px;
+    grid-area: summary;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+}
+
+a:visited,a:link{
+    color: white;
+}
