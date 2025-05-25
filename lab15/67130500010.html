@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+          height: 80vh;
+          font-family: sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        form{
+          width: 40em;
+        }
+        .field{
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 20px;
+        }
+        label{
+          width: 100%;
+          margin-bottom: 5px;
+        }
+        label+input{
+          width: 100%;
+          line-height: 2em;
+          padding-left: 10px;
+          border: 1px solid rgba(0,0,0,.3);
+          border-radius: 5px;
+        }
+        button{
+          border: none;
+          width: 6em;
+          height: 3em;
+          border-radius: 5px;
+          font-weight: bold;
+          color: rgb(105, 105, 103);
+        }
+        label+input:focus{
+          outline: none;
+          outline: 1px solid rgb(56, 225, 255);
+        }
+        button:hover{
+          background-color:  rgb(190, 190, 182);
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+      <div class="field">
+        <label>First Name</label>
+        <input type="text" name="first-name" placeholder="First Name">
+      </div>
+      <div class="field">
+        <label>Last Name</label>
+        <input type="text" name="last-name" placeholder="Last Name">
+      </div>
+      <div class="field">
+        <div class="checkbox">
+          <input type="checkbox">
+          <label>I agree to the Terms and Conditions</label>
+        </div>
+      </div>
+      <button class="button" type="submit">Submit</button>
+    </form>
+</body>
+</html>
